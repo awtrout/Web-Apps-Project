@@ -57,8 +57,8 @@
           </label>
           <script>
           function validateForm() {
-            var username = document.forms["myForm"]["username"].value;
-            var password = document.forms["myForm"]["password"].value;
+            var username = document.forms["Username"]["username"].value;
+            var password = document.forms["Password"]["password"].value;
             if (username == "") {
                 alert("Please enter a username");
                 return false;
@@ -74,6 +74,15 @@
               }
                 return true;
               }
+            function validateForm() {
+  var email = document.forms["myForm"]["email"].value;
+  
+  if (!validateEmail(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+  return true;
+}
           </script>
         </div>
         <div class="container" style="background-color:#f1f1f1">
