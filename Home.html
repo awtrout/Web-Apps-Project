@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Homepage</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* ID Selector */
+        #header {
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            color: white;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: white;
+            color: navy;
+        }
+        
+        /* Group Selector */
+        h2, h3 {
+            color: white;
+        }
+        
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Pseudo Selector */
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Body Background Color */
+        body {
+            background-color: navy;
+        }
+        
+        /* Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid white;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+        
+        /* Table Hover Effect */
+        tr:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS with ID Selector -->
+    <h1 id="header">Welcome to My Homepage</h1>
+    
+    <!-- Inline CSS with Class Selector -->
+    <p class="highlight">This is a paragraph with some highlighted text.</p>
+    
+    <!-- Group Selector -->
+    <h2>This is a heading</h2>
+
+  <!-- Navigation Bar -->
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+
+    <h3>Urgent Hotline Links:</h3>
+    
+    <!-- Table -->
+    <table>
+        <tr>
+            <th><a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Suicide Hotline</a></th>
+            <th><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">Addiction Hotline</th>
+            <th><a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank" rel="noopener noreferrer">Sexual Assault Hotline</th>
+        </tr>
+    </table>
+    
+    <!-- Rest of the content goes here -->
+</body>
+</html>
+
+
+
