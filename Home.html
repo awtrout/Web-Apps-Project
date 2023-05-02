@@ -19,7 +19,7 @@
         /* Class Selector */
         .highlight {
             background-color: white;
-            color: navy;
+            color: grey;
         }
         
         /* Group Selector */
@@ -42,7 +42,7 @@
         
         /* Body Background Color */
         body {
-            background-color: navy;
+            background-color: grey;
         }
         
         /* Table Style */
@@ -66,41 +66,87 @@
         tr:hover {
             background-color: #555;
         }
+        
+        /* Navigation Bar Style */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: navy;
+        }
+        
+        ul.navbar li {
+            float: left;
+        }
+        
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        ul.navbar li a:hover {
+            background-color: #555;
+        }
+        
+        /* Animation */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Float Concept */
+        .float-left {
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .float-right {
+            float: right;
+            margin-left: 20px;
+        }
+        
+        /* Box Model Concept */
+        .box-model {
+            padding: 20px;
+            border: 1px solid white;
+            background-color: navy;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <!-- Inline CSS with ID Selector -->
-    <h1 id="header">Welcome to My Homepage</h1>
+    <h1 id="header">Mental Health Resources</h1>
     
     <!-- Inline CSS with Class Selector -->
-    <p class="highlight">This is a paragraph with some highlighted text.</p>
+    <p class="highlight">This is a website dedicated to helping people find what they need to get help.</p>
     
     <!-- Group Selector -->
-    <h2>This is a heading</h2>
-
-  <!-- Navigation Bar -->
+    <h2>Quick Links:</h2>
+    
+    <!-- Navigation Bar -->
     <ul class="navbar">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-
-
+    
     <h3>Urgent Hotline Links:</h3>
     
     <!-- Table -->
     <table>
         <tr>
             <th><a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Suicide Hotline</a></th>
-            <th><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">Addiction Hotline</th>
-            <th><a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank" rel="noopener noreferrer">Sexual Assault Hotline</th>
+            <th><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">Addiction Hotline</a></th>
+            <th><a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank" rel="noopener noreferrer">Sexual Assault Hotline</a></th>
         </tr>
     </table>
     
-    <!-- Rest of the content goes here -->
-</body>
-</html>
-
+    <!-- Rest
 
 
