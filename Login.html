@@ -55,6 +55,27 @@
           <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
           </label>
+          function validateForm() {
+  var username = document.forms["myForm"]["username"].value;
+  var password = document.forms["myForm"]["password"].value;
+  
+  if (username == "") {
+    alert("Please enter a username");
+    return false;
+  }
+  
+  if (password == "") {
+    alert("Please enter a password");
+    return false;
+  }
+  
+  if (password.length < 8) {
+    alert("Password must be at least 8 characters long");
+    return false;
+  }
+  return true;
+}
+
         </div>
         <div class="container" style="background-color:#f1f1f1">
           <a href="Forgot-Password.html">Forgot Password?</a>
