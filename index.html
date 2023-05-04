@@ -1,0 +1,155 @@
+<!-- homepage -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Homepage</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* ID Selector */
+        #header {
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            color: white;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: white;
+            color: grey;
+        }
+        
+        /* Group Selector */
+        h2, h3 {
+            color: white;
+        }
+        
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Pseudo Selector */
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Body Background Color */
+        body {
+            background-color: grey;
+        }
+        
+        /* Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid white;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+        
+        /* Table Hover Effect */
+        tr:hover {
+            background-color: #555;
+        }
+        
+        /* Navigation Bar Style */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: navy;
+        }
+        
+        ul.navbar li {
+            float: left;
+        }
+        
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        ul.navbar li a:hover {
+            background-color: #555;
+        }
+        
+        /* Animation */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Float Concept */
+        .float-left {
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .float-right {
+            float: right;
+            margin-left: 20px;
+        }
+        
+        /* Box Model Concept */
+        .box-model {
+            padding: 20px;
+            border: 1px solid white;
+            background-color: navy;
+            color: white;
+        }
+                body {
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/30/02/20/mental-health-2019924__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <!-- Inline CSS with ID Selector -->
+    <h1 id="header">Mental Health Resources</h1>
+    
+    <!-- Inline CSS with Class Selector -->
+    <p class="highlight">This is a website dedicated to helping people find what they need to get help.</p>
+    
+    <!-- Group Selector -->
+    <h2>Quick Links:</h2>
+    
+    <!-- Navigation Bar -->
+    <ul class="navbar">
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Stats.html">Stats</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="Contact Form.html">Contact</a></li>
+    </ul>
+    
+    <h3>Urgent Hotline Links:</h3>
+    
+    <!-- Table -->
+    <table>
+        <tr>
+            <th><a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Suicide Hotline</a></th>
+            <th><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">Addiction Hotline</a></th>
+            <th><a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank" rel="noopener noreferrer">Sexual Assault Hotline</a></th>
+        </tr>
+    </table>
+    
+    <!-- Rest
