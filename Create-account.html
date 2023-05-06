@@ -54,9 +54,14 @@
           <button type="submit">Create Account</button>
         </div>
         <div class="container" style="background-color:#f1f1f1">
-          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="button" class="cancelbtn" onclick="goToLoginPage()">Cancel</button>
         </div>
       </form>
     </div>
+    <script>
+      function goToLoginPage() {
+        window.location.href = "login.html";
+      }
+    </script>
   </body>
 </html>
