@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Page</title>
-    <style>
-      body {
-        background-color: #f2f2f2;
-      }
-      #login-box {
-        margin: auto;
-        width: 300px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        background-color: #fff;
-      }
-      input[type=text], input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
-      button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-      }
-      button:hover {
-        opacity: 0.8;
-      }
-      .container {
-        padding: 16px;
-      }
-      span.psw {
-        float: right;
-        padding-top: 16px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="login-box">
-      <h2>Login</h2>
-      <form>
-        <div class="container">
-          <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="username" required>
-          <label for="password"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="password" required>
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-          <script>
-          function validateForm() {
-            var username = document.forms["Username"]["username"].value;
-            var password = document.forms["Password"]["password"].value;
-            if (username == "") {
-                alert("Please enter a username");
-                return false;
-              }
-              if (password == "") {
-                alert("Please enter a password");
-                return false;
-              }
-  
-              if (password.length < 8) {
-                alert("Password must be at least 8 characters long");
-                return false;
-              }
-                return true;
-              }
-            function validateForm() {
-  var email = document.forms["myForm"]["email"].value;
-  
-  if (!validateEmail(email)) {
-    alert("Please enter a valid email address");
-    return false;
-  }
-  return true;
-}
-          </script>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+    #login-box {
+      margin: auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .container {
+      padding: 16px;
+    }
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Arial", sans-serif;
+    }
+    .navbar li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div id="login-box">
+    <ul class="navbar">
+      <li><a href="Homepage.html">Home</a></li>
+    </ul>
+    <h2>Login</h2>
+    <form>
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <div style="text-align: center; margin-top: 10px;">
+          <a href="Create-Account.html"><button type="button">Create Account</button></a>
         </div>
-        <div class="container" style="background-color:#f1f1f1">
-          <a href="Forgot-Password.html">Forgot Password?</a>
-        </div>
-      </form>
-    </div>
-  </body>
+        <script>
+        // ... existing JavaScript code ...
+        </script>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <a href="Forgot-Password.html">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
