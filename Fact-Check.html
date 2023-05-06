@@ -3,34 +3,112 @@
 <head>
 	<title>Fact Check</title>
 	<style>
+		/* global styles */
+		* {
+			box-sizing: border-box;
+		}
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
+			background-color: #F8F8F8;
 			color: #333;
+			margin: 0;
 		}
-		table {
-			border-collapse: collapse;
-			margin: 20px;
+		a {
+			color: #333;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;
 		}
-		table, th, td {
-			border: 1px solid black;
-			padding: 10px;
+		a:hover {
+			color: #555;
 		}
-		ul {
-			margin-left: 20px;
+			/* navbar */
+	.navbar {
+			background-color: #333;
+			overflow: hidden;
 		}
-		ol {
-			margin-left: 40px;
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
 		}
-		hr {
-			border: 1px solid black;
-			margin: 20px;
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
 		}
-	</style>
+
+	/* content styles */
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		margin: 20px 0;
+		text-align: center;
+	}
+	h2 {
+		font-size: 28px;
+		font-weight: bold;
+		margin: 30px 0 10px 0;
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		margin: 20px 0;
+		text-align: justify;
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 20px 0;
+		font-size: 18px;
+	}
+	th, td {
+		border: 1px solid #ddd;
+		padding: 10px;
+		text-align: left;
+	}
+	th {
+		background-color: #333;
+		color: #F8F8F8;
+		font-weight: bold;
+	}
+	hr {
+		border: none;
+		border-top: 1px solid #ddd;
+		margin: 20px 0;
+	}
+	ul {
+		margin-left: 20px;
+		list-style-type: disc;
+	}
+	ol {
+		margin-left: 40px;
+		list-style-type: decimal;
+	}
+</style>
 </head>
 <body>
-	<h1>Fact Check</h1>
-	<p>With so much misinformation and stigma surrounding mental health, it can be hard to sort fact from fiction. It's important to understand the truth when faced with some of the most common misconceptions surrounding mental health.</p>
+	<header>
+		<nav class="navbar">
+			<a href="Homepage.html">Home</a>
+			<a href="Login.html">Login</a>
+			<a href="Stats.html">Stats</a>
+			<a href="About Mental Health.html">About Mental Health</a>
+			<a class="active" href="Resources.html">Resources</a>
+			<a href="Contact.html">Contact</a>
+		</nav>
+		<h1>Fact Check</h1>
+	</header>
+	<main class="container">
+		<p>With so much misinformation and stigma surrounding mental health, it can be hard to sort fact from fiction. It's important to understand the truth when faced with some of the most common misconceptions surrounding mental health.</p>
 	<p>Can you sort fact from fiction?</p>
 	<hr>
 	<h2>Myth vs. Fact</h2>
@@ -53,11 +131,11 @@
 			</tr>
 			<tr>
 				<td>Mental illness makes people violent.</td>
-				<td>The vast majority of people with mental health problems are no more likely to be violent than anyone else. Most people with mental illness are not violent and only 3%–5% of violent acts can be attributed to individuals living with a serious mental illness. In fact, people with severe mental illnesses are over 10 times more likely to be victims of violent crime than the general population. <sup>[1]</sup></td>
+				<td>The vast majority of people with mental health problems are no more likely to be violent than anyone else. Most people with mental illness are not violent and only 3% to 5% of violent acts can be attributed to individuals living with a serious mental illness. In fact, people with severe mental illnesses are over 10 times more likely to be victims of violent crime than the general population. <sup>[1]</sup></td>
 			</tr>
 			<tr>
 				<td>There is no hope for people with mental illness.</td>
-				<td>Studies show that people with mental health problems get better and many recover completely. Recovery refers to the process in which people are able to live, work, learn, and participate fully in their communities. There are more treatments, services, and community support systems than ever before, and they work.<sup>[1]</sup></td>
+				<td>Studies show that people with mental health problems get better and many recover completely. Recovery refers to the process in which people are able to live, work, learn,  and participate fully in their communities. There are more treatments, services, and community support systems than ever before, and they work.<sup>[1]</sup></td>
 			</tr>
 			<tr>
 				<td>It's impossible to prevent mental illness.</td>
@@ -69,4 +147,3 @@
 	<p>[1] What Is Mental Health? | MentalHealth.gov. (2022, February 28).</p>
 </body>
 </html>
-
